@@ -317,6 +317,8 @@ module Rack
             nil
           when :lax, 'Lax', :Lax
             '; SameSite=Lax'.freeze
+          when :none, 'None', :None
+            '; SameSite=None'            
           when true, :strict, 'Strict', :Strict
             '; SameSite=Strict'.freeze
           else
